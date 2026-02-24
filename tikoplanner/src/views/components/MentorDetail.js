@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 
 import mentorData from "../../data/mentor.json";
-import "./Profile.css";
+import "./MentorDetail.css";
 
-export default function ProfilePage() {
+export default function MentorDetailPage() {
 
     const { id } = useParams();
     const mentor = mentorData.find(m => m.id === Number(id));
@@ -14,12 +14,12 @@ export default function ProfilePage() {
     if (!mentor) return <h2>Mentor not found</h2>;
 
     return (
-        <div className="profile-page">
+        <div className="mentorDetail">
 
             {/* LEFT */}
-            <div className="profile-left">
+            <div className="mentor-left">
 
-                <div className="profile-card">
+                <div className="mentor-card">
                     <img
                         src={mentor.avatar}
                         alt={mentor.name}
@@ -30,13 +30,13 @@ export default function ProfilePage() {
                     />
 
                     <h2>{mentor.name}</h2>
-                    <p className="profile-role">{mentor.role}</p>
+                    <p className="mentor-role">{mentor.role}</p>
 
-                    <div className="profile-rating">
+                    <div className="mentor-rating">
                         ⭐ {mentor.rating} ({mentor.reviews})
                     </div>
 
-                    <div className="profile-tags">
+                    <div className="mentor-tags">
                         {mentor.skills?.map(skill => (
                             <span key={skill}>{skill}</span>
                         ))}
@@ -52,7 +52,7 @@ export default function ProfilePage() {
 
                 </div>
 
-                <div className="profile-about">
+                <div className="mentor-about">
                     <h3>About Me</h3>
                     <p>{mentor.about || mentor.desc}</p>
                 </div>
@@ -60,7 +60,7 @@ export default function ProfilePage() {
             </div>
 
             {/* RIGHT */}
-            <div className="profile-right">
+            <div className="mentor-right">
 
                 <h2>Mentor Details</h2>
                 <p>

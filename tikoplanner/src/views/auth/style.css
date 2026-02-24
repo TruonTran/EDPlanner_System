@@ -1,52 +1,41 @@
 /* ===== HEADER ===== */
-.header {
-  height: 88px;
+.container .header {
   display: flex;
-  align-items: flex-end;
-  padding: 0 24px 8px;
+  justify-content: space-between;
+  align-items: center;
+  animation: fadeDown 0.6s ease;
 }
 
-.logoWrapper {
-  width: 10px;
-  height: 10px;
-  margin-left: 100px;
-}
-
-.logo {
-  width: 10px;
-  height: 10px;
-  margin-top: 0px;
+.container .logo {
+  width: 250px;
   object-fit: contain;
-  transform: scale(2);
 }
 
 /* ===== CENTER ===== */
-.center {
+.container .center {
   flex: 1;
   display: flex;
   align-items: center;
-  padding: 80px;
   justify-content: center;
 }
 
 /* ===== CARD ===== */
-.card {
+.container .card {
   width: 420px;
   max-width: 90%;
   background: #fff;
-  border-radius: 28px;
   padding: 24px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
-.title {
+.container .title {
   font-size: 22px;
   font-weight: 700;
   margin-bottom: 20px;
   text-align: center;
 }
 
-.label {
+.container .label {
   font-size: 13px;
   font-weight: 500;
   margin-bottom: 6px;
@@ -54,7 +43,7 @@
 }
 
 /* ===== INPUT ===== */
-.inputWrapper {
+.container .inputWrapper {
   display: flex;
   align-items: center;
   border: 1px solid #d1f0eb;
@@ -64,7 +53,7 @@
   background-color: #f9fefe;
 }
 
-.inputWrapper input {
+.container .inputWrapper input {
   flex: 1;
   border: none;
   outline: none;
@@ -72,26 +61,12 @@
   background: transparent;
 }
 
-.eye {
+.container .eye {
   cursor: pointer;
-}
-
-/* ===== FORGOT PASSWORD LINK ===== */
-.forgotLink {
-  text-align: right;
-  font-size: 13px;
-  color: #5ac88f;
-  font-weight: 500;
-  cursor: pointer;
-  margin: -8px 4px 12px;
-}
-
-.forgotLink:hover {
-  text-decoration: underline;
 }
 
 /* ===== BUTTON ===== */
-.nextBtn {
+.container .nextBtn {
   width: 100%;
   background-color: #5ac88f;
   padding: 16px;
@@ -109,42 +84,41 @@
     box-shadow 0.15s ease;
 }
 
-.nextBtn:hover {
+.container .nextBtn:hover {
   transform: translateY(-1px);
   box-shadow: 0 12px 26px rgba(90, 200, 143, 0.45);
 }
 
-.nextBtn:active {
+.container .nextBtn:active {
   transform: translateY(0);
   box-shadow: 0 6px 14px rgba(90, 200, 143, 0.3);
 }
 
-/* ===== TEXT ===== */
-.footerText {
+/* ===== TEXT (login page, ) ===== */
+.container .footerText {
   text-align: center;
   margin-top: 16px;
   color: #6b7280;
 }
 
-.loginLink {
+.container .loginLink {
   color: #5ac88f;
   font-weight: 600;
   cursor: pointer;
 }
 
-.orText {
+.container .orText {
   text-align: center;
-  margin: 16px 0;
   color: #9ca3af;
   font-size: 12px;
 }
 
-.socialRow {
+.container .socialRow {
   display: flex;
   gap: 12px;
 }
 
-.socialBtn {
+.container .socialBtn {
   flex: 1;
   border: 1px solid #e5e7eb;
   padding: 12px 0;
@@ -154,71 +128,18 @@
   font-weight: 500;
 }
 
-/* ==========================New Pass page ================================== */
-
-/* ===== ANIMATIONS ===== */
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(24px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+/* ===== FORGOT PASSWORD LINK (loginpage)===== */
+.container .forgotLink {
+  text-align: right;
+  font-size: 13px;
+  color: #5ac88f;
+  font-weight: 500;
+  cursor: pointer;
+  margin: -8px 4px 12px;
 }
 
-@keyframes float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(6px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
-/* ===== AUTH CENTER ===== */
-.auth-center {
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-
-/* ===== LOGO ===== */
-.bigLogo {
-  width: 250px;
-  height: 200px;
-  transform: none;
-}
-
-.floating-logo {
-  position: absolute;
-  top: 0;
-  left: 500px;
-  animation: float 4s ease-in-out infinite;
-}
-
-/* ===== CARD EFFECT ===== */
-.fadeUp {
-  animation: fadeUp 0.6s ease forwards;
-}
-
-/* ===== INPUT FOCUS EFFECT ===== */
-.focusable:focus-within {
-  border-color: #a7e9c0;
-  box-shadow: 0 0 0 3px rgba(167, 233, 192, 0.35);
-}
-
-/* ===== REGISTER LOGO OVERRIDE ===== */
-.registerLogo {
-  width: 10px;
-  height: 10px;
-  margin-left: 200px;
-  margin-top: 93px;
-  transform: scale(2);
+.container .forgotLink:hover {
+  text-decoration: underline;
 }
 
 /* ================= FOOTER ================= */
@@ -279,155 +200,21 @@
   font-size: 14px;
 }
 
-/* ================= HOME PAGE ================= */
-
-/* animation còn thiếu */
-@keyframes fadeDown {
-  from {
-    opacity: 0;
-    transform: translateY(-16px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* page */
-.page {
-  background-color: #f6fffb;
-}
-
-/* ===== HEADER (HOME) ===== */
-.home-header {
-  justify-content: space-between;
-  background: #fff;
-  animation: fadeDown 0.5s ease;
-}
-
-.home-logo {
-  width: 150px;
-  height: 100px;
-  transform: none; /* tránh bị phình */
-}
-
-/* nav */
-.navRow {
-  display: flex;
-  gap: 20px;
-}
-
-.navItem {
-  font-weight: 500;
-  color: #374151;
-  cursor: pointer;
-}
-
-.navActive {
-  color: #34d399;
-  font-weight: 700;
-  border-bottom: 2px solid #34d399;
-  padding-bottom: 4px;
-}
-
-/* profile */
-.profileRow {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.avatar {
-  width: 34px;
-  height: 34px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-/* ===== HERO (ENHANCED) ===== */
-.hero {
-  background-color: #ecfdf5;
-  margin: 120px;
-  border-radius: 28px;
-  padding: 40px;
-  display: flex;
-  align-items: center;
-  gap: 32px;
-  animation: fadeUp 0.6s ease;
-}
-
-.heroLeft {
-  flex: 1.5;
-}
-
-.heroTitle {
-  font-size: 32px;
-  font-weight: 900;
-  color: #04281f;
-}
-
-.heroHighlight {
-  color: #34d399;
-}
-
-.heroDesc {
-  color: #4b7f76;
-  margin-top: 10px;
-  max-width: 520px;
-  line-height: 1.6;
-}
-
-/* SEARCH BOX – giống bản đẹp */
-.searchBox {
-  margin-top: 22px;
-  background: #fff;
-  border-radius: 999px;
-  padding: 12px 20px;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  box-shadow: 0 6px 18px rgba(52, 211, 153, 0.18);
-  border: 1px solid #d1f0eb;
-  max-width: 420px;
-  transition: 0.25s ease;
-}
-
-.searchBox:hover {
-  border-color: #34d399;
-  transform: translateY(-2px);
-}
-
-.searchInput {
-  border: none;
-  outline: none;
-  flex: 1;
+/* ================báo lỗi khi bấm vào mentor khi chưa đăng nhập ============ */
+.infoMessage {
+  background: #e7f3ff;
+  color: #084298;
+  padding: 10px 14px;
+  border-radius: 6px;
+  margin-bottom: 12px;
   font-size: 14px;
-  color: #065f46;
 }
 
-/* MASCOT */
-.mascotWrap {
-  flex: 1;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.mascotCircle {
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
-  background: #fff;
-  border: 3px solid #34d399;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  animation: float 4s ease-in-out infinite;
-}
-
-.mascotText {
-  font-size: 11px;
-  font-weight: 700;
-  color: #34d399;
-  margin-top: 6px;
+.errorMessage {
+  background: #fdecea;
+  color: #842029;
+  padding: 10px 14px;
+  border-radius: 6px;
+  margin-bottom: 12px;
+  font-size: 14px;
 }

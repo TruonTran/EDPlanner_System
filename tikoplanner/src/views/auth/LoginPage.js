@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import {
     IoMailOutline,
     IoLockClosedOutline,
@@ -12,37 +12,61 @@ import "./style.css";
 
 export default function Login() {
     const navigate = useNavigate();
+    const location = useLocation();
+
+    const redirectMessage = location.state?.message;
+    const redirectTo = location.state?.redirectTo || "/";
+
     const [showPassword, setShowPassword] = useState(false);
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
+    const [errorMessage, setErrorMessage] = useState("");
 
     const handleLogin = async () => {
+        setErrorMessage("");
+
         const result = await login(email, password);
 
         if (!result.success) {
-            alert(result.message);
+            setErrorMessage(result.message);
             return;
         }
 
         const user = result.user;
         localStorage.setItem("user", JSON.stringify(user));
 
-        if (user.role === "admin") navigate("/admin");
-        else if (user.role === "mentor") navigate("/mentorHome");
-        else navigate("/home");
+        navigate(redirectTo);
     };
 
     return (
         <div className="container">
             <div className="header">
                 <div className="logoWrapper">
-                    <img src="/assets/leftLogo.png" alt="logo" className="logo" />
+                    <img
+                        src="/assets/leftLogo.png"
+                        alt="logo"
+                        className="logo"
+                    />
                 </div>
             </div>
 
             <div className="center">
                 <div className="card">
                     <h2 className="title">Welcome back 👋</h2>
+
+                    {/* 👉 Message từ ProtectedRoute */}
+                    {redirectMessage && (
+                        <div className="infoMessage">
+                            {redirectMessage}
+                        </div>
+                    )}
+
+                    {/* 👉 Lỗi login */}
+                    {errorMessage && (
+                        <div className="errorMessage">
+                            {errorMessage}
+                        </div>
+                    )}
 
                     <label className="label">Your Email</label>
                     <div className="inputWrapper">
@@ -65,17 +89,24 @@ export default function Login() {
                         />
                         <span
                             className="eye"
-                            onClick={() => setShowPassword(!showPassword)}
+                            onClick={() =>
+                                setShowPassword(!showPassword)
+                            }
                         >
                             {showPassword ? (
-                                <IoEyeOffOutline size={18} color="#7baea6" />
+                                <IoEyeOffOutline
+                                    size={18}
+                                    color="#7baea6"
+                                />
                             ) : (
-                                <IoEyeOutline size={18} color="#7baea6" />
+                                <IoEyeOutline
+                                    size={18}
+                                    color="#7baea6"
+                                />
                             )}
                         </span>
                     </div>
 
-                    {/* 👉 Forgot password */}
                     <div
                         className="forgotLink"
                         onClick={() => navigate("/forgot")}
@@ -83,8 +114,10 @@ export default function Login() {
                         Forgot password?
                     </div>
 
-
-                    <button className="nextBtn" onClick={handleLogin}>
+                    <button
+                        className="nextBtn"
+                        onClick={handleLogin}
+                    >
                         Login ✨
                     </button>
 

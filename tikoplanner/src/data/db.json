@@ -2,214 +2,45 @@
   "users": [
     {
       "id": 1,
-      "email": "student1@gmail.com",
+      "email": "thoa@student.com",
       "password": "123456",
       "role": "student",
-      "name": "Nguyen Van A",
-      "avatar": "/assets/avatar/student1.png"
-    },
-
-    {
-      "id": 2,
-      "email": "mentor1@gmail.com",
-      "password": "123456",
-      "role": "mentor",
       "name": "Ms. Thoa",
-      "major": "Marketing",
-      "rating": 4.9,
-      "avatar": "/assets/mentor/mentor1.png"
+      "avatar": "/assets/student/student1.png"
     },
     {
       "id": 3,
-      "email": "mentor2@gmail.com",
+      "email": "tan@student.com",
       "password": "123456",
-      "role": "mentor",
+      "role": "student",
       "name": "Mr. Tấn",
-      "major": "IT",
-      "rating": 4.8,
-      "avatar": "/assets/mentor/mentor2.png"
+      "avatar": "/assets/student/student2.png"
     },
     {
       "id": 4,
-      "email": "mentor3@gmail.com",
+      "email": "ken@student.com",
       "password": "123456",
-      "role": "mentor",
+      "role": "student",
       "name": "Elena Xí Ken",
-      "major": "Marketing",
-      "rating": 5.0,
-      "avatar": "/assets/mentor/mentor3.png"
+      "avatar": "/assets/student/student3.png"
     },
     {
       "id": 5,
-      "email": "mentor4@gmail.com",
+      "email": "trang@student.com",
       "password": "123456",
-      "role": "mentor",
+      "role": "student",
       "name": "Ms. Trang",
-      "major": "Finance",
-      "rating": 4.7,
-      "avatar": "/assets/mentor/mentor4.png"
-    },
-    {
-      "id": 6,
-      "email": "mentor5@gmail.com",
-      "password": "123456",
-      "role": "mentor",
-      "name": "Mr. Long",
-      "major": "IT",
-      "rating": 4.6,
-      "avatar": "/assets/mentor/mentor5.png"
-    },
-    {
-      "id": 7,
-      "email": "mentor6@gmail.com",
-      "password": "123456",
-      "role": "mentor",
-      "name": "Ms. Linh",
-      "major": "Design",
-      "rating": 4.9,
-      "avatar": "/assets/mentor/mentor6.png"
-    },
-    {
-      "id": 8,
-      "email": "mentor7@gmail.com",
-      "password": "123456",
-      "role": "mentor",
-      "name": "Mr. Minh",
-      "major": "Engineering",
-      "rating": 4.5,
-      "avatar": "/assets/mentor/mentor7.png"
-    },
-    {
-      "id": 9,
-      "email": "mentor8@gmail.com",
-      "password": "123456",
-      "role": "mentor",
-      "name": "Dr. Hương",
-      "major": "Healthcare",
-      "rating": 4.8,
-      "avatar": "/assets/mentor/mentor8.png"
-    },
-    {
-      "id": 10,
-      "email": "mentor9@gmail.com",
-      "password": "123456",
-      "role": "mentor",
-      "name": "Mr. Quân",
-      "major": "Finance",
-      "rating": 4.9,
-      "avatar": "/assets/mentor/mentor9.png"
-    },
-    {
-      "id": 11,
-      "email": "mentor10@gmail.com",
-      "password": "123456",
-      "role": "mentor",
-      "name": "Ms. Phương",
-      "major": "Marketing",
-      "rating": 4.6,
-      "avatar": "/assets/mentor/mentor10.png"
+      "avatar": "/assets/student/student4.png"
     },
     {
       "id": 12,
-      "email": "mentor11@gmail.com",
+      "email": "thoa.abavina@mentor.com",
       "password": "123456",
       "role": "mentor",
-      "name": "Mr. Dũng",
-      "major": "IT",
-      "rating": 4.7,
-      "avatar": "/assets/mentor/mentor11.png"
+      "name": "MBA Nguyen Thi Kim Thoa",
+      "major": "Business",
+      "avatar": "/assets/mentor/mentor7.png"
     },
-    {
-      "id": 13,
-      "email": "mentor12@gmail.com",
-      "password": "123456",
-      "role": "mentor",
-      "name": "Ms. Yến",
-      "major": "Design",
-      "rating": 4.5,
-      "avatar": "/assets/mentor/mentor12.png"
-    },
-    {
-      "id": 14,
-      "email": "mentor13@gmail.com",
-      "password": "123456",
-      "role": "mentor",
-      "name": "Mr. Hòa",
-      "major": "Engineering",
-      "rating": 4.4,
-      "avatar": "/assets/mentor/mentor13.png"
-    },
-    {
-      "id": 15,
-      "email": "mentor14@gmail.com",
-      "password": "123456",
-      "role": "mentor",
-      "name": "Dr. Nam",
-      "major": "Healthcare",
-      "rating": 4.9,
-      "avatar": "/assets/mentor/mentor14.png"
-    },
-    {
-      "id": 16,
-      "email": "mentor15@gmail.com",
-      "password": "123456",
-      "role": "mentor",
-      "name": "Ms. An",
-      "major": "Finance",
-      "rating": 4.6,
-      "avatar": "/assets/mentor/mentor15.png"
-    },
-    {
-      "id": 17,
-      "email": "mentor16@gmail.com",
-      "password": "123456",
-      "role": "mentor",
-      "name": "Mr. Khoa",
-      "major": "IT",
-      "rating": 4.8,
-      "avatar": "/assets/mentor/mentor16.png"
-    },
-    {
-      "id": 18,
-      "email": "mentor17@gmail.com",
-      "password": "123456",
-      "role": "mentor",
-      "name": "Ms. Mai",
-      "major": "Marketing",
-      "rating": 4.7,
-      "avatar": "/assets/mentor/mentor17.png"
-    },
-    {
-      "id": 19,
-      "email": "mentor18@gmail.com",
-      "password": "123456",
-      "role": "mentor",
-      "name": "Mr. Phúc",
-      "major": "Engineering",
-      "rating": 4.5,
-      "avatar": "/assets/mentor/mentor18.png"
-    },
-    {
-      "id": 20,
-      "email": "mentor19@gmail.com",
-      "password": "123456",
-      "role": "mentor",
-      "name": "Ms. Như",
-      "major": "Design",
-      "rating": 4.8,
-      "avatar": "/assets/mentor/mentor19.png"
-    },
-    {
-      "id": 21,
-      "email": "mentor20@gmail.com",
-      "password": "123456",
-      "role": "mentor",
-      "name": "Dr. Khánh",
-      "major": "Healthcare",
-      "rating": 5.0,
-      "avatar": "/assets/mentor/mentor20.png"
-    },
-
     {
       "id": 22,
       "email": "admin@gmail.com",
