@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "name": "Starter Mentoring",
+    "price": 199000,
+    "sessions": 1,
+    "duration": "60 minutes",
+    "description": "1:1 mentoring session for startup orientation",
+    "popular": false
+  },
+  {
+    "id": 2,
+    "name": "Growth Mentoring",
+    "price": 499000,
+    "sessions": 3,
+    "duration": "3 x 60 minutes",
+    "description": "3 mentoring sessions to develop your startup strategy",
+    "popular": true
+  },
+  {
+    "id": 3,
+    "name": "Premium Mentoring",
+    "price": 799000,
+    "sessions": 5,
+    "duration": "5 x 60 minutes",
+    "description": "5 mentoring sessions + materials + priority support",
+    "popular": false
+  }
+]

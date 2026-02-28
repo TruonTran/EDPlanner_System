@@ -10,9 +10,9 @@ export default function Header() {
     const navigate = useNavigate();
     const location = useLocation();
 
-
     useEffect(() => {
         const storedUser = localStorage.getItem("user");
+        // Nếu có dữ liệu người dùng trong localStorage, cập nhật state user
         if (storedUser) {
             setUser(JSON.parse(storedUser));
         }
@@ -23,6 +23,8 @@ export default function Header() {
         setUser(null);
         navigate("/");
     };
+
+    const isMentor = user?.role === "mentor";
 
     return (
         <>
@@ -45,10 +47,15 @@ export default function Header() {
                     </li>
 
                     <li
-                        className={`menuItem ${location.pathname === "/products" ? "active" : ""}`}
-                        onClick={() => navigate("/products")}
+                        className={`menuItem ${location.pathname === (isMentor ? "/mentor-slots" : "/products")
+                            ? "active"
+                            : ""
+                            }`}
+                        onClick={() =>
+                            navigate(isMentor ? "/mentor-slots" : "/products")
+                        }
                     >
-                        Products
+                        {isMentor ? "My Slots" : "Products"}
                     </li>
 
                     <li

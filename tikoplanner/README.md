@@ -27,6 +27,8 @@ npx json-server --watch src/data/db.json --port 3001
 
 npm install lucide-react
 
+npm install chart.js
+
 # Code up git
 
 git init

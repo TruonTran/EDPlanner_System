@@ -5,18 +5,21 @@ import mentorData from "../../data/mentor.json";
 import "./MentorDetail.css";
 
 export default function MentorDetailPage() {
-
+    // Lấy ID mentor từ URL
     const { id } = useParams();
+    // Tìm mentor trong dữ liệu dựa trên ID
     const mentor = mentorData.find(m => m.id === Number(id));
-
+    // State để lưu mentor đã chọn (nếu có)
     const [selectedMentor, setSelectedMentor] = useState(null);
-
+    // Nếu không tìm thấy mentor, hiển thị thông báo lỗi   
     if (!mentor) return <h2>Mentor not found</h2>;
 
     return (
+        // Hiển thị chi tiết mentor
         <div className="mentorDetail">
 
             {/* LEFT */}
+            {/* Hiển thị thông tin cơ bản của mentor và nút chọn mentor */}
             <div className="mentor-left">
 
                 <div className="mentor-card">
@@ -51,7 +54,7 @@ export default function MentorDetailPage() {
                     </button>
 
                 </div>
-
+                {/* Hiển thị phần giới thiệu về mentor */}
                 <div className="mentor-about">
                     <h3>About Me</h3>
                     <p>{mentor.about || mentor.desc}</p>
@@ -60,6 +63,7 @@ export default function MentorDetailPage() {
             </div>
 
             {/* RIGHT */}
+            {/* Hiển thị phần chi tiết và hành động khi đã chọn mentor  */}
             <div className="mentor-right">
 
                 <h2>Mentor Details</h2>
@@ -70,6 +74,7 @@ export default function MentorDetailPage() {
             </div>
 
             {/* ===== FIXED BOTTOM PANEL ===== */}
+            {/* Hiển thị thanh thông tin mentor đã chọn và các hành động liên quan khi đã chọn mentor  */}
             {selectedMentor && (
                 <div className="booking-bar">
 

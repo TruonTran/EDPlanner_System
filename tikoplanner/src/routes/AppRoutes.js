@@ -10,7 +10,12 @@ import HomePage from "../views/mainPage/HomePage";
 
 import ProtectedRoute from "./ProtectedRoute";
 import MentorDetailPage from "../views/components/MentorDetail";
+
 import AllMentorPage from "../views/mainPage/AllMentor";
+import ProductsPage from "../views/mainPage/Products";
+import ContactPage from "../views/mainPage/Conatct";
+
+import MentorSlotPage from "../views/mainPage/MentorSlot";
 
 export default function AppRoutes() {
     return (
@@ -34,6 +39,10 @@ export default function AppRoutes() {
             />
 
             <Route path="/allmentor" element={<AllMentorPage />} />
+            <Route path="/products" element={<ProductsPage />} />
+            <Route path="/contact" element={<ContactPage />} />
+
+            <Route path="/mentor-slots" element={<MentorSlotPage />} />
         </Routes>
     );
 }
