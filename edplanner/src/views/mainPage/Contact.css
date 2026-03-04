@@ -1,0 +1,131 @@
+/* ===== PAGE ===== */
+.contactPage {
+  font-family: Arial, sans-serif;
+  background: #f5f7fa;
+  color: #333;
+}
+
+/* ===== HERO ===== */
+.contactPage .hero {
+  background: linear-gradient(135deg, #4f46e5, #6366f1);
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.contactPage.hero h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.contactPage .hero p {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+/* ===== SECTION ===== */
+.contactPage .section {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.contactPage .section h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* ===== GRID ===== */
+.contactPage .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* ===== CARD ===== */
+.contactPage .card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: 0.3s;
+}
+
+.contactPage .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.contactPage .card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.contactPage .card h3,
+.contactPage .card h4 {
+  margin-bottom: 10px;
+}
+
+.contactPage .card small {
+  color: #666;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* ===== Q&A ===== */
+.contactPage .qaBox {
+  background: white;
+  padding: 20px;
+  border-left: 4px solid #4f46e5;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+}
+
+.contactPage .qaBox h4 {
+  margin-bottom: 10px;
+}
+
+/* ===== CONTACT FORM ===== */
+.contactPage .contactForm {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contactPage .contactForm input,
+.contactPage .contactForm textarea {
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.contactPage .contactForm input:focus,
+.contactPage .contactForm textarea:focus {
+  outline: none;
+  border-color: #4f46e5;
+  box-shadow: 0 0 5px rgba(79, 70, 229, 0.3);
+}
+
+.contactPage .contactForm button {
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  background: #4f46e5;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contactPage .contactForm button:hover {
+  background: #3730a3;
+}

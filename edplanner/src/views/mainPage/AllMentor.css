@@ -1,0 +1,99 @@
+.allMentorPage {
+  background: #f0f9ff;
+}
+
+/* container */
+.allMentorPage .mentor-container {
+  padding: 80px 8%;
+}
+
+/* grid */
+.allMentorPage .mentor-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* card */
+.allMentorPage .mentor-card {
+  background: white;
+  border-radius: 26px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(14, 165, 233, 0.08);
+  cursor: pointer;
+  transition: 0.35s;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border: 1px solid #e0f2fe;
+}
+
+.allMentorPage .mentor-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 45px rgba(14, 165, 233, 0.18);
+}
+
+/* avatar */
+.allMentorPage .mentor-avatar {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  object-position: top;
+}
+
+/* info */
+.allMentorPage .mentor-info {
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.allMentorPage .mentor-info h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 4px;
+  color: #0f172a;
+}
+
+.allMentorPage .mentor-role {
+  font-size: 14px;
+  color: #0369a1;
+  font-weight: 500;
+}
+
+/* meta */
+.allMentorPage .mentor-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 14px 0;
+}
+
+.allMentorPage .mentor-category {
+  background: #e0f2fe;
+  color: #0369a1;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.allMentorPage .mentor-rating {
+  font-size: 13px;
+  font-weight: 600;
+  color: #f59e0b;
+}
+
+/* desc */
+.allMentorPage .mentor-desc {
+  font-size: 14px;
+  color: #475569;
+  line-height: 1.6;
+  margin-top: auto;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
