@@ -2,7 +2,7 @@ import { Routes, Route } from "react-router-dom";
 // thanh menu 
 import HomePage from "../views/mainPage/HomePage";
 import AllMentorPage from "../views/mainPage/AllMentor";
-import ProductsPage from "../views/mainPage/Products";
+import SchedulesPage from "../views/mainPage/Schedules";
 import ContactPage from "../views/mainPage/Conatct";
 // auth routes
 import Login from "../views/auth/LoginPage";
@@ -22,7 +22,7 @@ export default function AppRoutes() {
             {/* thanh menu */}
             <Route path="/" element={<HomePage />} />
             <Route path="/allmentor" element={<AllMentorPage />} />
-            <Route path="/products" element={<ProductsPage />} />
+            <Route path="/Schedules" element={<SchedulesPage />} />
             <Route path="/contact" element={<ContactPage />} />
 
             {/* chi tiết mentor (yêu cầu đăng nhập) */}

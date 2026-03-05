@@ -79,6 +79,35 @@ export default function HomePage() {
                 </div>
             </section>
 
+            <section className="vision-section">
+                <div className="vision-card">
+                    <h2>Tầm nhìn</h2>
+                    <ul>
+                        <li><strong>Tiên phong kết nối:</strong> Trở thành hệ sinh thái công nghệ hàng đầu kết nối tri thức giữa Sinh viên và Mentor.</li>
+                        <li><strong>Định hình tương tác:</strong> Hiện đại hóa và chuyên nghiệp hóa cách thức trao đổi.</li>
+                        <li><strong>Phá bỏ rào cản:</strong> Tạo ra sự linh hoạt tối đa, xóa tan mọi khoảng cách về không gian và thủ tục hành chính.</li>
+                    </ul>
+                </div>
+
+                <div className="vision-card">
+                    <h2>Sứ mệnh</h2>
+                    <ul>
+                        <li><strong>Cho Sinh viên:</strong> Xóa bỏ rào cản tìm Mentor, tập trung tối ưu vào khởi nghiệp và học thuật.</li>
+                        <li><strong>Cho Mentor:</strong> Cung cấp công cụ quản lý thông minh, tối ưu thời gian và hiệu quả hỗ trợ.</li>
+                        <li><strong>Cho Giáo dục:</strong> Số hóa quy trình kết nối, thúc đẩy tinh thần khởi nghiệp thực chiến tại giảng đường.</li>
+                    </ul>
+                </div>
+
+                <div className="vision-card">
+                    <h2>Giá trị cốt lõi</h2>
+                    <ul>
+                        <li><strong>Cầu nối tối ưu:</strong> Kết nối trực tiếp sinh viên và Mentor đúng chuyên môn lĩnh vực.</li>
+                        <li><strong>Tiết kiệm thời gian:</strong> Thao tác đặt lịch nhanh chóng, loại bỏ quy trình thủ công.</li>
+                        <li><strong>Quản lý minh bạch:</strong> Hệ thống hóa lịch trình cụ thể, rõ ràng cho cả hai bên.</li>
+                    </ul>
+                </div>
+            </section>
+
             {/* MENTOR SECTION */}
             {(!user || user.role === "student") && (
                 <section className="mentors">

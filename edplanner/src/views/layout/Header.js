@@ -46,33 +46,33 @@ export default function Header() {
                         className={`menuItem ${location.pathname === "/" ? "active" : ""}`}
                         onClick={() => navigate("/")}
                     >
-                        Home
+                        Trang chủ
                     </li>
 
                     <li
                         className={`menuItem ${location.pathname === "/mentors" ? "active" : ""}`}
                         onClick={() => navigate("/allmentor")}
                     >
-                        All Mentor
+                        Tất cả mentor
                     </li>
 
                     <li
-                        className={`menuItem ${location.pathname === (isMentor ? "/mentor-slots" : "/products")
+                        className={`menuItem ${location.pathname === (isMentor ? "/mentor-slots" : "/Schedules")
                             ? "active"
                             : ""
                             }`}
                         onClick={() =>
-                            navigate(isMentor ? "/mentor-slots" : "/products")
+                            navigate(isMentor ? "/mentor-slots" : "/Schedules")
                         }
                     >
-                        {isMentor ? "My Slots" : "Products"}
+                        {isMentor ? "Lịch của tôi" : "Lịch hẹn"}
                     </li>
 
                     <li
                         className={`menuItem ${location.pathname === "/contact" ? "active" : ""}`}
                         onClick={() => navigate("/contact")}
                     >
-                        Contact
+                        Liên hệ
                     </li>
                 </ul>
 
@@ -84,13 +84,13 @@ export default function Header() {
                                 className="loginBtn"
                                 onClick={() => navigate("/loginpage")}
                             >
-                                Login
+                                Đăng nhập
                             </button>
                             <button
                                 className="signupBtn"
                                 onClick={() => navigate("/signup")}
                             >
-                                Sign Up
+                                Đăng ký
                             </button>
                         </>
                     ) : (
@@ -109,13 +109,13 @@ export default function Header() {
                                         className="dropdownItem"
                                         onClick={() => navigate("/settings")}
                                     >
-                                        Settings
+                                        Cài đặt
                                     </div>
                                     <div
                                         className="dropdownItem logout"
                                         onClick={handleLogout}
                                     >
-                                        Logout
+                                        Đăng xuất
                                     </div>
                                 </div>
                             )}

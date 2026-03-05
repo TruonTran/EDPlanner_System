@@ -93,14 +93,28 @@
       ]
     }
   ],
-  "contacts": [
+  "reviews": [
     {
-      "id": "d2f6",
-      "name": "Truong Ngoc Tran",
-      "email": "trantnce180829@fpt.edu.vn",
-      "subject": "Ky thuat phan mem",
-      "message": "to ko co y kien gi het",
-      "createdAt": "2026-02-28T09:51:09.736Z"
+      "id": 1,
+      "name": "Trần Hoàng",
+      "comment": "Dịch vụ rất chuyên nghiệp.",
+      "rating": 5,
+      "time": "2 ngày trước"
+    },
+    {
+      "id": 2,
+      "name": "Minh Anh",
+      "comment": "Giao diện web đẹp.",
+      "rating": 4,
+      "time": "1 tuần trước"
+    },
+    {
+      "id": "6441",
+      "name": "tôi là tên",
+      "comment": "tên là tôi",
+      "rating": 4,
+      "time": "Vừa xong"
     }
-  ]
+  ],
+  "contacts": []
 }
