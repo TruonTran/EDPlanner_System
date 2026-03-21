@@ -24,7 +24,7 @@ import { logout } from "../../controllers/authController";
 import Header from "../layout/Header";
 import Footer from "../layout/Footer";
 
-import "./ProfilePage.css";
+import "../style/ProfilePage.css";
 
 const ProfilePage = () => {
   const navigate = useNavigate();
@@ -253,8 +253,8 @@ const ProfilePage = () => {
                         onChange={handleChange}
                       >
                         <option value="">Select</option>
-                        <option value="Male">Male</option>
-                        <option value="Female">Female</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
                       </Form.Select>
                     </Form.Group>
 

@@ -1,0 +1,73 @@
+.payment-container {
+  padding: 30px;
+  background: #f9fafb;
+  min-height: 100vh;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+/* CARD */
+.card-list {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.card {
+  width: 220px;
+  padding: 20px;
+  border-radius: 15px;
+  background: linear-gradient(135deg, #4f46e5, #9333ea);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  transform: scale(1);
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card.active {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  transform: scale(1.08);
+}
+
+/* STATUS */
+.card-status {
+  margin-bottom: 30px;
+}
+
+/* HISTORY */
+.history {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.history-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+  transition: 0.3s;
+}
+
+.history-item:hover {
+  background: #f3f4f6;
+}
+
+/* STATUS COLOR */
+.status.success {
+  color: #10b981;
+}
+
+.status.pending {
+  color: #f59e0b;
+}
+
+.status.danger {
+  color: #ef4444;
+}

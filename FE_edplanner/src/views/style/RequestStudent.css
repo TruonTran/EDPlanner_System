@@ -1,0 +1,97 @@
+.requests-container {
+  padding: 20px;
+  background: #f5f7fb;
+  min-height: 100vh;
+}
+
+/* header */
+.requests-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  color: #777;
+  font-size: 14px;
+}
+
+/* tabs */
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tab-btn {
+  padding: 8px 16px;
+  border: none;
+  background: #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.tab-btn.active {
+  background: #007bff;
+  color: #fff;
+}
+
+/* grid */
+.requests-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 16px;
+}
+
+/* card */
+.request-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+}
+
+.card-icon {
+  font-size: 24px;
+}
+
+/* title */
+.request-name {
+  margin: 10px 0;
+}
+
+/* status */
+.status-badge {
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+.status-badge.pending {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.status-badge.approved {
+  background: #d4edda;
+  color: #155724;
+}
+
+/* detail */
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  margin: 5px 0;
+}
+
+/* button */
+.approved-btn {
+  margin-top: 10px;
+  width: 100%;
+  padding: 6px;
+  border: none;
+  background: #28a745;
+  color: white;
+  border-radius: 6px;
+}

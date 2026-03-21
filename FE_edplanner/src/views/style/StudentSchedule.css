@@ -1,0 +1,119 @@
+/* GLOBAL FIX */
+* {
+  box-sizing: border-box;
+}
+
+/* CONTAINER */
+.Schedule_Student {
+  padding: 20px;
+  background: #f5f7fb;
+}
+
+/* HEADER */
+.Schedule_Student .schedule-header {
+  margin-bottom: 20px;
+}
+
+.Schedule_Student .subtitle {
+  color: #666;
+}
+
+/* GRID */
+.Schedule_Student .schedule-grid {
+  display: flex;
+  gap: 10px;
+}
+
+/* TIME COLUMN */
+.Schedule_Student .time-column {
+  width: 140px;
+}
+
+.Schedule_Student .time-header {
+  height: 60px;
+}
+
+.Schedule_Student .time-slot-header {
+  height: 140px;
+  background: #fff;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* DAY COLUMN */
+.Schedule_Student .day-column {
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.Schedule_Student .day-header {
+  height: 60px;
+  background: #fff;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+/* SLOT */
+.Schedule_Student .time-slot {
+  height: 140px;
+  display: flex;
+}
+
+/* EMPTY */
+.Schedule_Student .empty-slot {
+  width: 100%;
+  height: 100%;
+  background: #eaeef5;
+  border-radius: 10px;
+}
+
+/* SESSION CARD */
+.Schedule_Student .session-card {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+/* STATUS */
+.Schedule_Student .status-attended {
+  border-left: 5px solid #28a745;
+}
+
+.Schedule_Student .status-happening {
+  border-left: 5px solid #ffc107;
+}
+
+/* TEXT FIX */
+.Schedule_Student .course-code,
+.Schedule_Student .course-title,
+.Schedule_Student .course-time,
+.Schedule_Student .course-room {
+  font-size: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* BUTTON */
+.Schedule_Student .join-button {
+  padding: 5px;
+  border: none;
+  border-radius: 6px;
+  background: #ccc;
+  color: white;
+}

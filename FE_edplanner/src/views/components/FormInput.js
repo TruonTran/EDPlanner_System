@@ -1,5 +1,5 @@
 import React from "react";
-import "./FormInput.css";
+import "../style/FormInput.css";
 export default function FormInput({
     label,
     icon,

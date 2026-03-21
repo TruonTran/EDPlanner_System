@@ -33,10 +33,15 @@ npm install react-router-dom@6
 npm list react-router-dom
 
 # Code up git
+xóa 
+git remote remove origin
+Kiểm tra lại
+git remote -v
+
 
 git init
 git add .
-git remote add origin https://github.com/TruonTran/TIKOPlanner_System.git
+git remote add origin https://github.com/TruonTran/EDPlanner_System.git
 git branch -M main
 git commit -m "first commit"
 git push -u origin main

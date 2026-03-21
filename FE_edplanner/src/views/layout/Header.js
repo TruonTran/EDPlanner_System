@@ -1,8 +1,8 @@
 /* eslint-disable jsx-a11y/alt-text */
 import { useLocation, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
-
-import "./Header.css";
+import { URL_IMG } from "../../utils/constant";
+import "../style/Header.css";
 
 export default function Header() {
     const [user, setUser] = useState(null);
@@ -34,8 +34,6 @@ export default function Header() {
         navigate("/");
     };
 
-    const isMentor = user?.role === "mentor";
-
     return (
         <>
             <header className={`headerpage ${scrolled ? "scrolled" : ""}`}>
@@ -55,19 +53,6 @@ export default function Header() {
                     >
                         Tất cả mentor
                     </li>
-
-                    <li
-                        className={`menuItem ${location.pathname === (isMentor ? "/mentor-slots" : "/Schedules")
-                            ? "active"
-                            : ""
-                            }`}
-                        onClick={() =>
-                            navigate(isMentor ? "/mentor-slots" : "/Schedules")
-                        }
-                    >
-                        {isMentor ? "Lịch của tôi" : "Lịch hẹn"}
-                    </li>
-
                     <li
                         className={`menuItem ${location.pathname === "/contact" ? "active" : ""}`}
                         onClick={() => navigate("/contact")}
@@ -99,7 +84,10 @@ export default function Header() {
                                 className="userTrigger"
                                 onClick={() => setShowMenu(!showMenu)}
                             >
-                                <img src={user.avatar} className="avatar" />
+                                <img
+                                    src={`${URL_IMG}${user.avatar}`}
+                                    className="avatar"
+                                />
                                 <span>{user.name}</span>
                             </div>
 
@@ -113,7 +101,7 @@ export default function Header() {
                                     </div>
                                     <div
                                         className="dropdownItem"
-                                        onClick={() => navigate("/settings")}
+                                        onClick={() => navigate("/studentSettings")}
                                     >
                                         Cài đặt
                                     </div>

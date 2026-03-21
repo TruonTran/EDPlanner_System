@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable jsx-a11y/alt-text */
-import "./HomePage.css";
+import "../style/HomePage.css";
 
 import Header from "../layout/Header";
 import Footer from "../layout/Footer";

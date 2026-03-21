@@ -3,7 +3,7 @@ import Header from "../layout/Header";
 import Footer from "../layout/Footer";
 import mentorData from "../../data/mentor.json";
 import { useNavigate } from "react-router-dom";
-import "./AllMentor.css";
+import "../style/AllMentor.css";
 
 export default function AllMentorPage() {
     const navigate = useNavigate();

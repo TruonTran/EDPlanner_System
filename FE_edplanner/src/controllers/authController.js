@@ -34,7 +34,7 @@ export const loginUser = async (user, navigate) => {
     // Điều hướng:
     // Nếu là admin -> /admin
     // Nếu là user -> /
-    navigate(res.data.data.isAdmin ? "/admin" : "/");
+    navigate(res.data.data.isAdmin ? "/mentor-dashboard" : "/");
 
     // Hiển thị thông báo login thành công
     toast.success(res.data.message);

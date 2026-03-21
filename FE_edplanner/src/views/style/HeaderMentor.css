@@ -1,0 +1,122 @@
+.headerMentor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 30px;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* left */
+
+.headerMentor .headerLeft h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.headerMentor .headerSub {
+  font-size: 13px;
+  color: #64748b;
+  margin-top: 3px;
+}
+
+/* right */
+
+.headerMentor .headerRight {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+/* notification */
+
+.headerMentor .notification {
+  position: relative;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.headerMentor .badge {
+  width: 8px;
+  height: 8px;
+  background: #ef4444;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  right: 0;
+}
+
+/* user */
+
+.headerMentor .userSection {
+  position: relative;
+}
+
+.headerMentor .userTrigger {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  padding: 6px 10px;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+
+.headerMentor .userTrigger:hover {
+  background: #f1f5f9;
+}
+
+.headerMentor .avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.headerMentor .userText {
+  display: flex;
+  flex-direction: column;
+}
+
+.headerMentor .name {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.headerMentor .role {
+  font-size: 11px;
+  color: #94a3b8;
+  text-transform: uppercase;
+}
+
+/* dropdown */
+
+.headerMentor .dropdownMenu {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 160px;
+  overflow: hidden;
+}
+
+.headerMentor .dropdownItem {
+  padding: 12px 15px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.headerMentor .dropdownItem:hover {
+  background: #f1f5f9;
+}
+
+.headerMentor .logout {
+  color: #ef4444;
+}

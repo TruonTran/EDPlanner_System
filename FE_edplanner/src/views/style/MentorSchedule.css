@@ -1,0 +1,92 @@
+.mentor-schedule-page {
+  display: flex;
+  min-height: 100vh;
+  background: #f4f6fb;
+}
+
+.mentor-schedule-page .main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  padding: 30px;
+  overflow-y: auto;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.mentor-select {
+  margin-bottom: 20px;
+}
+
+.mentor-select select {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+.schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.schedule-table th {
+  background: #eef2ff;
+  padding: 12px;
+  font-size: 13px;
+}
+
+.schedule-table td {
+  text-align: center;
+  padding: 14px;
+  border-bottom: 1px solid #f1f1f1;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.schedule-table td:hover {
+  background: #f8faff;
+}
+
+.time-col {
+  font-weight: 600;
+  background: #fafafa;
+}
+
+.active-slot {
+  background: #4f46e5;
+  color: white;
+  font-weight: 600;
+}
+
+.save-btn {
+  margin-top: 20px;
+  background: #16a34a;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.save-btn:hover {
+  background: #15803d;
+}
+
+.error-banner {
+  background: #ffe5e5;
+  color: #d32f2f;
+  border: 1px solid #ffb3b3;
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-weight: 500;
+}

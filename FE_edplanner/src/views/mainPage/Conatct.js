@@ -12,7 +12,7 @@ import {
 
 import Header from "../layout/Header";
 import Footer from "../layout/Footer";
-import "./Contact.css";
+import "../style/Contact.css";
 
 // Dữ liệu bài viết được điều chỉnh cho phù hợp với App Đặt lịch Mentor
 const MOCK_NEWS = [
